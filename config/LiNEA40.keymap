@@ -11,7 +11,7 @@
 #define MOUSE 1
 #define MARK 2
 #define CURSOR 3
-#define FUNCTION 4
+#define NUM 4
 #define SCROLL 5
 #define SCROLL_BT 6
 
@@ -47,8 +47,8 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <FUNCTION>;
-        input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
+        layers = <NUM>;
+        input-processors = <&zip_wheel_scaler 2 1>; //スクロールを2倍速にする
     };
 };
 
