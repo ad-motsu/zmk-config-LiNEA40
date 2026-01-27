@@ -45,12 +45,14 @@
     };
 };
 
+/*
 &msc_input_listener {
     speed_up {
-        layers = <NUM>;
+        layers = <SCROLL_BT>;
         input-processors = <&zip_wheel_scaler 2 1>; //スクロールを2倍速にする
     };
 };
+*/
 
 &trackball_listener {
     scroller {
