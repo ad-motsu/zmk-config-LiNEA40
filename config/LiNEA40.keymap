@@ -59,7 +59,7 @@
         layers = <SCROLL_BT>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -206,10 +206,10 @@
 
         NUM_win_jp {
             bindings = <
-&kp SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                    &kp BACKSLASH   &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
-&kp SQT         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp LEFT_BRACE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SQT
-&kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)                        &kp LS(N8)      &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT
-&trans          &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                           &trans             &trans         &kp PLUS
+&kp SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                    &kp BACKSLASH   &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
+&kp SQT    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp LEFT_BRACE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SQT
+&trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)                        &kp LS(N8)      &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT
+&trans     &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                           &trans             &trans         &kp PLUS
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
