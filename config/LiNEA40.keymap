@@ -14,6 +14,10 @@
 #define NUM 4
 #define SCROLL 5
 #define SCROLL_BT 6
+#define JP_YEN          0x89
+#define JP_TILDE    　　LS(JP_CARET)
+#define JP_BACKQUOTE    LEFT_BRACE
+#define JP_UNDERSCORE   LS(0x87)
 
 //mouse cursol
 
@@ -206,10 +210,10 @@
 
         NUM_win_jp {
             bindings = <
-&kp SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                    &kp BACKSLASH   &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
-&kp SQT    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp LEFT_BRACE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SQT
+&kp SLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                    &kp JP_YEN   &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
+&kp SQT    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SQT
 &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)                        &kp LS(N8)      &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT
-&trans     &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                           &trans             &trans         &kp PLUS
+&kp JP_UNDERSCORE     &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                           &trans             &trans         &kp PLUS
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
