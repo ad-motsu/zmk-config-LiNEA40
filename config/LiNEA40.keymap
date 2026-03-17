@@ -63,7 +63,7 @@
         layers = <SCROLL_BT>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -196,9 +196,9 @@
         NUM {
             bindings = <
 &kp SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                    &kp BACKSLASH         &kp EXCLAMATION        &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                       &kp GRAVE             &kp PERCENT            &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON
-&trans          &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans        &trans    &trans  &trans                                       &trans            &trans             &kp SQT
+&kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                       &kp GRAVE             &kp PERCENT            &kp CARET         &kp AMPERSAND      &kp SEMICOLON
+&kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
+&trans          &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans        &trans    &trans  &trans                                       &trans            &trans             &kp DOUBLE_QUOTES
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -218,9 +218,9 @@
         NUM_win_jp {
             bindings = <
 &kp SLASH          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                    &kp JP_YEN        &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
-&kp SQT            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SQT
-&kp JP_UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)                        &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT
-&trans             &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                             &trans             &trans         &kp PLUS
+&kp SQT            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                            &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SEMICOLON
+&kp JP_UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)                        &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
+&trans             &kp KP_NUMBER_0  &trans           &kp EQUAL        &trans             &trans    &trans  &trans                             &trans             &kp PLUS       &kp AT_SIGN
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
