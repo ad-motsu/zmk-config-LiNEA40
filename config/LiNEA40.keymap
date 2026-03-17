@@ -63,7 +63,7 @@
         layers = <SCROLL_BT>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -207,8 +207,8 @@
         ARROW_win_jp {
             bindings = <
 &kp F1        &kp F2            &kp F3         &kp F4             &kp F5                      &kp F6     &kp F7    &kp F8           &kp F9     &kp F10
-&kp LC(HOME)  &kp LC(LEFT)      &kp PAGE_UP    &kp LC(RIGHT)      &kp HOME                    &kp LG(C)  &mkp MB1  &kp UP_ARROW     &mkp MB2   &mkp MB3
-&kp LC(END)   &kp LA(LG(LEFT))  &kp PAGE_DOWN  &kp LA(LG(RIGHT))  &kp END                     &kp LG(V)  &kp LEFT  &kp DOWN_ARROW   &kp RIGHT  &kp RG(TAB)
+&kp LC(HOME)  &kp LC(LG(LEFT))  &kp PAGE_UP    &kp LC(LG(RIGHT))  &kp HOME                    &kp RC(C)  &mkp MB1  &kp UP_ARROW     &mkp MB2   &mkp MB3
+&kp LC(END)   &kp LG(LEFT)      &kp PAGE_DOWN  &kp LG(RIGHT)      &kp END                     &kp RC(V)  &kp LEFT  &kp DOWN_ARROW   &kp RIGHT  &kp RG(TAB)
 &kp ESCAPE    &trans            &trans         &trans             &trans    &trans    &trans  &trans               &kp PRINTSCREEN  &kp F11    &kp F12
             >;
 
@@ -230,7 +230,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans        &trans        &trans        &trans        &trans                               &change_mac     &change_iPad  &trans        &trans        &change_win_jp
-&trans        &trans        &trans        &trans        &trans                               &to 0           &to 1         &trans        &to 2         &trans
+&trans        &trans        &trans        &trans        &trans                               &to 0           &to 1         &trans        &trans        &to 2
 &trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR
             >;
 
