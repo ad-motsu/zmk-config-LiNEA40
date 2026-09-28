@@ -66,7 +66,7 @@
         layers = <SCROLL_BT>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -168,7 +168,7 @@
         default_win_jp {
             bindings = <
 &kp Q             &kp W         &kp E   &kp R                 &kp T                                           &kp Y        &kp U  &kp I          &kp O          &kp P
-&kp A             &kp S         &kp D   &kp F                 &kp G                                           &kp H        &kp J  &lt 8 K        &kp L          &kp MINUS
+&kp A             &kp S         &kp D   &kp F                 &kp G                                           &kp H        &kp J  &lt 8 K        &kp L          &lt 10 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C   &kp V                 &kp B                                           &kp N        &kp M  &kp COMMA      &kp DOT        &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LEFT_ALT  &trans  &mt LCTRL LANGUAGE_2  &lt 6 SPACE  &lt 8 LANGUAGE_1    &kp BACKSPACE  &lt 7 ENTER         &kp LS(LG(S))  &kp RIGHT_WIN  &lt 9 DELETE
             >;
@@ -190,7 +190,7 @@
 &kp F1      &kp F2            &kp F3         &kp F4             &kp F5                      &kp F6     &kp F7    &kp F8                &kp F9     &kp F10
 &kp F11     &kp LC(LEFT)      &kp PAGE_UP    &kp LC(RIGHT)      &kp HOME                    &kp LG(C)  &mkp MB1  &kp UP_ARROW          &mkp MB2   &mkp MB3
 &kp F12     &kp LA(LG(LEFT))  &kp PAGE_DOWN  &kp LA(LG(RIGHT))  &kp END                     &kp LG(V)  &kp LEFT  &kp DOWN_ARROW        &kp RIGHT  &kp RC(UP_ARROW)
-&kp ESCAPE  &trans            &trans         &trans             &trans    &trans    &trans  &trans               &kp LG(LS(NUMBER_4))  &trans     &kp GLOBE
+&kp ESCAPE  &trans            &trans         &trans             &trans    &trans    &trans  &trans               &kp LG(LS(NUMBER_4))  &trans     &kp LC(SPACE)
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -212,7 +212,7 @@
 &kp F1        &kp F2            &kp F3         &kp F4             &kp F5                      &kp F6     &kp F7    &kp F8           &kp F9     &kp F10
 &kp LC(HOME)  &kp LC(LG(LEFT))  &kp PAGE_UP    &kp LC(LG(RIGHT))  &kp HOME                    &kp RC(C)  &mkp MB1  &kp UP_ARROW     &mkp MB2   &mkp MB3
 &kp LC(END)   &kp LG(LEFT)      &kp PAGE_DOWN  &kp LG(RIGHT)      &kp END                     &kp RC(V)  &kp LEFT  &kp DOWN_ARROW   &kp RIGHT  &kp RG(TAB)
-&kp ESCAPE    &kp INT_HENKAN    &trans         &trans             &trans    &trans    &trans  &trans               &kp PRINTSCREEN  &kp F11    &kp F12
+&kp ESCAPE    &kp INT_HENKAN    &trans         &trans             &trans    &trans    &trans  &trans               &kp PRINTSCREEN  &kp F11    &kp GRAVE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -246,6 +246,15 @@
 &trans  &trans  &trans  &trans  &trans                    &change_mac  &change_iPad  &trans  &trans  &change_win_jp
 &trans  &trans  &trans  &trans  &trans                    &bt BT_CLR   &trans        &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                     &trans  &trans  &trans
+            >;
+        };
+
+        Excel {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans                 &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &kp RC(RS(SEMICOLON))  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans                 &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                         &trans  &trans  &trans
             >;
         };
     };
